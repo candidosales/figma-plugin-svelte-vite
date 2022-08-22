@@ -12,7 +12,7 @@ _You also can just type "New Plugin" in Figma global search to go there_
 From there you need to link a **manifest.json** file located at **public** folder in your directory:
 
 ```bash
-/figma-plugin/public/manifest.json
+/figma-plugin/manifest.json
 ```
 
 Now edit this file to give a new name for your plugin, and you will be able call it from Figma: **Plugins / Development / Your Plugin Name**
