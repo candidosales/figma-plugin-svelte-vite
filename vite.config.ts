@@ -13,9 +13,6 @@ export default defineConfig({
     brotliSize: false,
     rollupOptions: {
       inlineDynamicImports: true,
-      // output: {
-      //   manualChunks: () => "everything.js",
-      // },
     },
   },
 });
