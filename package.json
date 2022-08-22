@@ -1,0 +1,29 @@
+{
+  "name": "figma-plugin-svelte-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "postbuild": "tsc -p tsconfig.json"
+  },
+  "main": "dist/code.js",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.50.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.1",
+    "@tsconfig/svelte": "^3.0.0",
+    "figma-plugin-ds-svelte": "^1.2.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.5",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.8.0",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7",
+    "vite-plugin-singlefile": "^0.11.1"
+  }
+}

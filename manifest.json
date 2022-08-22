@@ -1,0 +1,8 @@
+{
+  "name": "Figma Plugin + Svelte + Vite",
+  "id": "795096273369409539",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/index.html",
+  "editorType": ["figma", "figjam"]
+}
