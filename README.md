@@ -1,5 +1,7 @@
 # Figma Plugin + Svelte + Vite + Typescript
 
+![image](./assets/cover-github.png)
+
 A boilerplate for creating Figma plugins using Svelte, Vite and Typescript.
 
 ## Connecting your plugin to Figma
