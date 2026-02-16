@@ -1,30 +1,30 @@
 {
-  "name": "figma-plugin-svelte-vite",
-  "private": true,
-  "version": "2.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "postbuild": "tsc -p tsconfig.json"
-  },
-  "main": "dist/code.js",
-  "devDependencies": {
-    "@figma/plugin-typings": "^1.123.0",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
-    "@tailwindcss/postcss": "^4.1.18",
-    "@tsconfig/svelte": "^5.0.7",
-    "autoprefixer": "^10.4.24",
-    "postcss": "^8.5.6",
-    "sass": "^1.97.3",
-    "svelte": "^5.51.2",
-    "svelte-check": "^4.4.0",
-    "tailwindcss": "^4.1.18",
-    "tslib": "^2.8.1",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.1",
-    "vite-plugin-singlefile": "^2.3.0"
-  }
+    "name": "figma-plugin-svelte-vite",
+    "private": true,
+    "version": "2.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "postbuild": "tsc -p tsconfig.json"
+    },
+    "main": "dist/code.js",
+    "devDependencies": {
+        "@figma/plugin-typings": "^1.123.0",
+        "@sveltejs/vite-plugin-svelte": "^6.2.4",
+        "@tailwindcss/postcss": "^4.1.18",
+        "@tsconfig/svelte": "^5.0.7",
+        "autoprefixer": "^10.4.24",
+        "postcss": "^8.5.6",
+        "sass": "^1.97.3",
+        "svelte": "^5.51.2",
+        "svelte-check": "^4.4.0",
+        "tailwindcss": "^4.1.18",
+        "tslib": "^2.8.1",
+        "typescript": "^5.9.3",
+        "vite": "^7.3.1",
+        "vite-plugin-singlefile": "^2.3.0"
+    }
 }
