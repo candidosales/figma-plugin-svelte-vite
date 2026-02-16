@@ -1,12 +1,6 @@
 <script lang="ts">
   import "./app.scss";
 
-  //import Global CSS from the svelte boilerplate
-  //contains Figma color vars, spacing vars, utility classes and more
-  import { GlobalCSS } from "figma-plugin-ds-svelte";
-
-  //import some Svelte Figma UI components
-  import { Button } from "figma-plugin-ds-svelte";
   import Figma from "./lib/Figma.svelte";
   import Svelte from "./lib/Svelte.svelte";
   import Vite from "./lib/Vite.svelte";
@@ -40,9 +34,9 @@
   </div>
 
   <div class="flex p-xxsmall mb-xsmall justify-content-center">
-    <Button on:click={clickPreview} variant="secondary mr-xsmall"
-      >Preview</Button
+    <button class="button button--secondary mr-xsmall" onclick={clickPreview}
+      >Preview</button
     >
-    <Button on:click={clickApply}>Apply</Button>
+    <button class="button button--primary" onclick={clickApply}>Apply</button>
   </div>
 </div>
