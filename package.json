@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "concurrently -n plugin,ui \"npm run build:plugin -- --watch\" \"vite build --watch\"",
         "build": "npm run build:ui && npm run build:plugin",
-        "build:plugin": "esbuild src/code.ts --bundle --outfile=dist/code.js --target=es2020",
+        "build:plugin": "esbuild src/code.ts --bundle --outfile=dist/code.js --target=es6",
         "build:ui": "vite build",
         "preview": "vite preview",
         "check": "svelte-check --tsconfig ./tsconfig.json",
