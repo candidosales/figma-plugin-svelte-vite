@@ -4,11 +4,12 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte(), viteSingleFile()],
-  build: {
-    target: "esnext",
-    assetsInlineLimit: 100000000,
-    chunkSizeWarningLimit: 100000000,
-    cssCodeSplit: false,
-  },
+    plugins: [svelte(), viteSingleFile()],
+    build: {
+        target: "esnext",
+        assetsInlineLimit: 100000000,
+        chunkSizeWarningLimit: 100000000,
+        cssCodeSplit: false,
+        emptyOutDir: false,
+    },
 });

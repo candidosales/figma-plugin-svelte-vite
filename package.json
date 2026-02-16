@@ -4,8 +4,10 @@
     "version": "2.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
+        "dev": "concurrently -n plugin,ui \"npm run build:plugin -- --watch\" \"vite\"",
+        "build": "npm run build:ui && npm run build:plugin",
+        "build:plugin": "esbuild src/code.ts --bundle --outfile=dist/code.js --target=es2020",
+        "build:ui": "vite build",
         "preview": "vite preview",
         "check": "svelte-check --tsconfig ./tsconfig.json",
         "postbuild": "tsc -p tsconfig.json"
@@ -17,6 +19,8 @@
         "@tailwindcss/postcss": "^4.1.18",
         "@tsconfig/svelte": "^5.0.7",
         "autoprefixer": "^10.4.24",
+        "concurrently": "^9.2.1",
+        "esbuild": "^0.27.3",
         "postcss": "^8.5.6",
         "sass": "^1.97.3",
         "svelte": "^5.51.2",

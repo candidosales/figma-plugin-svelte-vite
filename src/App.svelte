@@ -25,6 +25,7 @@
   class="w-full min-h-screen flex flex-col items-center justify-center bg-gray-50"
 >
   <div class="flex flex-row max-w-[200px] justify-center space-x-4 mb-6">
+    <h1>Hello AAAAA</h1>
     <div class="p-2">
       <Figma />
     </div>
