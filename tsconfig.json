@@ -1,9 +1,10 @@
 {
     "extends": "@tsconfig/svelte/tsconfig.json",
     "compilerOptions": {
-      "target": "es6",
+      "target": "ESNext",
       "useDefineForClassFields": true,
-      "module": "es6",
+      "module": "ESNext",
+      "moduleResolution": "bundler",
       "resolveJsonModule": true,
       "forceConsistentCasingInFileNames": true,
       "baseUrl": ".",

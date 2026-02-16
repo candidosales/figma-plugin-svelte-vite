@@ -1,24 +1,19 @@
 <script lang="ts">
-  import "./app.scss";
+  import './app.scss';
 
-  //import Global CSS from the svelte boilerplate
-  //contains Figma color vars, spacing vars, utility classes and more
-  import { GlobalCSS } from "figma-plugin-ds-svelte";
-
-  //import some Svelte Figma UI components
-  import { Button } from "figma-plugin-ds-svelte";
-  import Figma from "./lib/Figma.svelte";
-  import Svelte from "./lib/Svelte.svelte";
-  import Vite from "./lib/Vite.svelte";
+  import Figma from './lib/Figma.svelte';
+  import Svelte from './lib/Svelte.svelte';
+  import Tailwind from './lib/Tailwind.svelte';
+  import Vite from './lib/Vite.svelte';
 
   // How to send message to parent (Figma)
   parent.postMessage(
     {
       pluginMessage: {
-        type: "start",
+        type: 'start',
       },
     },
-    "*"
+    '*',
   );
 
   const clickPreview = () => {};
@@ -26,23 +21,36 @@
   const clickApply = () => {};
 </script>
 
-<div class="wrapper p-xxsmall flex column">
-  <div class="flex row justify-content-center">
-    <div class="p-xsmall">
+<div
+  class="w-full min-h-screen flex flex-col items-center justify-center bg-gray-50"
+>
+  <div class="flex flex-row max-w-[200px] justify-center space-x-4 mb-6">
+    <div class="p-2">
       <Figma />
     </div>
-    <div class="p-xsmall">
+    <div class="p-2">
       <Svelte />
     </div>
-    <div class="p-xsmall">
+    <div class="p-2">
+      <Tailwind />
+    </div>
+    <div class="p-2">
       <Vite />
     </div>
   </div>
 
-  <div class="flex p-xxsmall mb-xsmall justify-content-center">
-    <Button on:click={clickPreview} variant="secondary mr-xsmall"
-      >Preview</Button
+  <div class="flex flex-row justify-center space-x-2">
+    <button
+      class="px-4 py-2 rounded border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition"
+      onclick={clickPreview}
     >
-    <Button on:click={clickApply}>Apply</Button>
+      Preview
+    </button>
+    <button
+      class="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
+      onclick={clickApply}
+    >
+      Apply
+    </button>
   </div>
 </div>
