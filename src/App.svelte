@@ -3,6 +3,7 @@
 
   import Figma from './lib/Figma.svelte';
   import Svelte from './lib/Svelte.svelte';
+  import Tailwind from './lib/Tailwind.svelte';
   import Vite from './lib/Vite.svelte';
 
   // How to send message to parent (Figma)
@@ -29,6 +30,9 @@
     </div>
     <div class="p-2">
       <Svelte />
+    </div>
+    <div class="p-2">
+      <Tailwind />
     </div>
     <div class="p-2">
       <Vite />

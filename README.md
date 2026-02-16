@@ -1,8 +1,8 @@
-# Figma Plugin + Svelte + Vite + Typescript
+# Figma Plugin + Svelte + Tailwind + Vite + Typescript
 
 ![image](./assets/cover-github.png)
 
-A boilerplate for creating Figma plugins using Svelte, Vite and Typescript.
+A boilerplate for creating Figma plugins using Svelte, Tailwind, Vite and Typescript.
 
 ## Connecting your plugin to Figma
 
