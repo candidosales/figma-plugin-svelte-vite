@@ -2,13 +2,13 @@
 
 ![image](./assets/cover-github.png)
 
-A boilerplate for creating Figma plugins using Svelte, Tailwind CSS (v4), Vite, and Typescript.
+A boilerplate for creating Figma plugins using Svelte, Tailwind CSS (v4), Vite 7, and Typescript.
 
 ## Features
 
 - **Svelte 5**: Latest version of Svelte.
 - **Tailwind CSS v4**: Utility-first CSS framework with the latest engine.
-- **Vite**: Fast build tool and dev server.
+- **Vite 7**: Fast build tool and dev server.
 - **Hot Reload**: Concurrent development for both Plugin code and UI.
 - **TypeScript**: Type safety for both Plugin and UI logic.
 
